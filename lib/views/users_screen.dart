@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:api_integration/models/user.dart';
 
+// ignore: must_be_immutable
 class UsersScreen extends StatelessWidget {
   UsersScreen({super.key});
 
   final List<User> users = [];
+  // ignore: prefer_typing_uninitialized_variables
   var resData;
   Future<List<User>> fetchUsers() async {
     final url = Uri.https('jsonplaceholder.typicode.com', '/users');
