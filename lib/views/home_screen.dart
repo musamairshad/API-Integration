@@ -1,5 +1,5 @@
-import 'package:api_integration/views/photos_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:api_integration/views/products_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
           child: Text('API Integration'),
         ),
       ),
-      body: PhotosScreen(),
+      body: const ProductsScreen(),
     );
   }
 }
