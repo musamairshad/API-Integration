@@ -13,7 +13,7 @@ class PostsScreen extends StatelessWidget {
     final resData = json.decode(response.body);
     if (response.statusCode == 200) {
       posts.clear();
-      for (Map i in resData) {
+      for (Map<String, dynamic> i in resData) {
         posts.add(Post.fromJson(i));
       }
       return posts;
